@@ -1,41 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <h1><strong>Instituto Provincial de Educación Terciaria N° 1</strong></h1>
     <header>
-      
-        <NAV class="menu"> 
-            <ul>
-                <li><a href="/index.html">Inicio</a> </li>
-                <li> <a href="nosotros.html">Nosotros</a></li>
-                <li><a href="carreras.html">Carreras</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="anexos.html">Anexos</a></li>
-            </ul>
-        
-        </NAV>  
+      <nav class="menu">
+        <ul>
+          <li><a href="/index.html"><img src="../image/logo1-2022.webp" alt="logo-ipet"></a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="carreras.html">Carreras</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="capacitaciones.html">Capacitaciones</a></li>         
+          <li class="lazos"><a href="https://lazos.neuquen.edu.ar/login/index.php" target="_blank"><img src="/image/logo-lazos.png" alt="lazos"></a></li>
+        </ul>
+      </nav>
     </header>
-    <br><br>
 
+    <main>
+      
+    <div class="contenedor-contacto">
+      <section class="contacto">
+        <form action="https://formspree.io/f/xgvkbgey" method="POST">
+          <h3>Contáctanos</h3>
+          
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+      
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="_replyto" placeholder="tucorreo@example.com" required>
+      
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      
+          <button id="enviar" type="submit">Enviar</button>
+        </form>
+      </section>
 
+        <section class="ubicacion">
+          <h3>Ubicación</h3>
+          <div class="mapa">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.794066373178!2d-68.05968582401741!3d-38.95612217171712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960bd2d8c7c37de5%3A0x62d328cbcd74d351!2sAv.%20Argentina%20935%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1718747482329!5m2!1ses-419!2sar" 
+              width="100%" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
+    </div>  
+      
 
+      <section> 
+        <h3>Nuestras Redes</h3>
+        
+        <div class="redes">
+            <a href="https://www.facebook.com/profile.php?id=61565826404370" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/ipet_n1/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://t.me/IPET1" target="_blank"><i class="bi bi-telegram"></i></a>
+        </div>  
 
-
-
-
+      </section>
+    </main>
 
     <footer>
-
-    
-        <div class="logosProvincia">
-            <img src="https://www.neuquen.edu.ar/wp-content/themes/cpe/img/pie.svg" alt="logos oficiales">
-            <P>© 2024 Reservados todos los derechos IPET1</P>
-        </div>
-    </footer>    
-</body>
+      <div class="logosProvincia">
+        <img src="../image/logos-footer-transparente-lazos.png" alt="logos oficiales" />
+        <p>© 2024 Reservados todos los derechos IPET1</p>
+      </div>
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
